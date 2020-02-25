@@ -1,0 +1,5 @@
+name: Task creation form module
+description: Form for task creation module.
+package: Custom Form
+type: module
+core: 8.x
