@@ -4,9 +4,11 @@ namespace Drupal\task_manager\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Database\Database;
+
 
 /**
- * Class SimpleForm
+ * Class TaskForm
  *
  * @package Drupal\task_manager\Form
  */
@@ -23,6 +25,14 @@ class TaskForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    //Getting developer users list from DB
+    $database = Database::getConnection();
+    $query = $database->select('user__roles', 'ur');
+    $query->condition('roles_target_id', 'developer', '=');
+    $query->join('users_field_data', 'ufd', 'ur.entity_id = ufd.uid');
+    $query->addField('ufd', 'name');
+    $seniorUserNames = $query->execute()->fetchCol();
+    $ucFirstDevNames = array_map('ucfirst', $seniorUserNames);
 
     //Task description
     $form['description'] = [
@@ -49,23 +59,26 @@ class TaskForm extends FormBase {
     ];
 
     //Senior developer name who created task.
-    $form['author'] = [
+    $form['assigned_for'] = [
       '#type' => 'select',
-      '#title' => $this->t('Tech/Senior Name'),
-      '#options' => [
-        'petras' => 'Petras',
-        'jonas' => 'Jonas',
-        'domas' => 'Domas',
-      ],
+      '#title' => $this->t('Junior Developer Name'),
+      '#options' => $ucFirstDevNames,
       '#empty_option' => $this->t('-select-'),
-      '#description' => $this->t('Senior developer name who created task')
+      '#description' => $this->t('Junior developers name. Task is assigned for.')
     ];
 
     // Time given to complete a task in hours.
-    $form['time_given'] = [
+    $form['time_given_senior'] = [
       '#type' => 'number',
-      '#title' => $this->t('Time given'),
-      '#description' => $this->t('Time given to complete a task in hours.'),
+      '#title' => $this->t('Time Senior Needs'),
+      '#description' => $this->t('Time needed for senior developer to complete Hours.'),
+    ];
+
+    // Time given to complete a task in hours.
+    $form['time_given_junior'] = [
+      '#type' => 'number',
+      '#title' => $this->t('Time Junior Needs'),
+      '#description' => $this->t('Time needed for junior developer to complete Hours.'),
     ];
 
     // Tasks list.
@@ -78,7 +91,7 @@ class TaskForm extends FormBase {
     // Submit button that handles the submission of the form.
     $form['actions']['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Submit'),
+      '#value' => $this->t('Create Task'),
       '#description' => $this->t('Submit a task'),
     ];
 
@@ -91,6 +104,7 @@ class TaskForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     // Find out what was submitted.
     $values = $form_state->getValues();
+    dump($values);
     foreach ($values as $key => $value) {
       $label = isset($form[$key]['#title']) ? $form[$key]['#title'] : $key;
 

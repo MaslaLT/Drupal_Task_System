@@ -1,0 +1,14 @@
+uuid: f66c6e95-2178-4ad6-b7f7-534bb0de8e83
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.senior_tech_lead
+  module:
+    - user
+id: user_remove_role_action.senior_tech_lead
+label: 'Remove the Senior/Tech lead role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: senior_tech_lead

@@ -1,0 +1,9 @@
+uuid: 4fa9dbbf-f30d-49e6-947f-cb1ad2bbc76e
+langcode: en
+status: true
+dependencies: {  }
+id: senior_tech_lead
+label: 'Senior/Tech lead'
+weight: -7
+is_admin: null
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: 84439c56-d8e3-44e8-98ac-296e8319e719
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.senior_tech_lead
+  module:
+    - user
+id: user_add_role_action.senior_tech_lead
+label: 'Add the Senior/Tech lead role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: senior_tech_lead
