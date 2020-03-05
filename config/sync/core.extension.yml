@@ -33,7 +33,7 @@ module:
   search: 0
   shortcut: 0
   system: 0
-  task_creation_form: 0
+  task_manager: 0
   taxonomy: 0
   text: 0
   toolbar: 0

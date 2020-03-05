@@ -1,5 +1,5 @@
 task_creation.form:
-  title: 'Tesst'
+  title: 'Test'
   description: 'Testing menu links'
   route_name: task_creation_form.simple_form
   weight: 10

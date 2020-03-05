@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\task_creation_form\Form;
+namespace Drupal\task_manager\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -8,7 +8,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Class SimpleForm
  *
- * @package Drupal\task_creation_form\Form
+ * @package Drupal\task_manager\Form
  */
 class TaskForm extends FormBase {
 
