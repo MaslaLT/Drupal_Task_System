@@ -10,7 +10,7 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * @package Drupal\task_creation_form\Form
  */
-class SimpleForm extends FormBase {
+class TaskForm extends FormBase {
 
   /**
    * {@inheritdoc}

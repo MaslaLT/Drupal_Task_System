@@ -10,8 +10,8 @@ use Drupal\Core\Controller\ControllerBase;
  *
  * @package Drupal\task_creation_form\Controller
  */
-class TaskCreationController extends ControllerBase {
-  public function content() {
+class TaskController extends ControllerBase {
+  public function showTasks() {
     return [
       '#type' => 'markup',
       '#markup' => t('This is my menu linked custom page'),
