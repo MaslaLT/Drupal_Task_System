@@ -68,14 +68,14 @@ class TaskForm extends FormBase {
     ];
 
     // Time given to complete a task in hours.
-    $form['time_given_senior'] = [
+    $form['time_needs_senior'] = [
       '#type' => 'number',
       '#title' => $this->t('Time Senior Needs'),
       '#description' => $this->t('Time needed for senior developer to complete Hours.'),
     ];
 
     // Time given to complete a task in hours.
-    $form['time_given_junior'] = [
+    $form['time_needs_junior'] = [
       '#type' => 'number',
       '#title' => $this->t('Time Junior Needs'),
       '#description' => $this->t('Time needed for junior developer to complete Hours.'),
