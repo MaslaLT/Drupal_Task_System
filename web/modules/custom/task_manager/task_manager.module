@@ -1,1 +1,46 @@
 <?php
+/**
+ * @file
+ * Module file of task_manager module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ * This function will change standard login form.
+ * From login using User name and password to login using Email and password.
+ */
+function task_manager_form_alter (&$form, FormStateInterface $form_state, $form_id) {
+  //Checks if current form is user_login_form.
+  if($form_id === 'user_login_form') {
+    //Disables Forms name field to render array.
+    $form['name']['#access'] = FALSE;
+    //Adds form field mail to render array.
+    $form['mail'] = [
+      '#type' => 'email',
+      '#title' => t('E-mail'),
+      '#description' => t('Enter your CDP Project user mail.'),
+      '#weight' => -1,
+      '#required' => TRUE,
+    ];
+    //Add custom function _task_manager_form_alter_validate_mail
+    //to validate email
+    $form['#validate'] = array_merge(['_task_manager_form_alter_validate_mail'], $form['#validate']);
+  }
+}
+
+/**
+ * Checks if users entered email and password entered into login form match
+ * @return void
+ */
+function _task_manager_form_alter_validate_mail(array &$form, FormStateInterface $form_state): void {
+  //Takes submitted form mail field content
+  $mail = $form_state->getValue('mail');
+  //Load user from DB using email from form
+  $user = user_load_by_mail($mail);
+  //Checks user loaded if yes when puts in just loaded user name into form state.
+  if ($user) {
+    $form_state->setValue('name', $user->getAccountName());
+  }
+}
