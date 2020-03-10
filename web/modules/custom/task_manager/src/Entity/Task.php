@@ -27,6 +27,7 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *     "created_by" = "created_by",
  *     "status" = "status",
  *     "time_spent" = "time_spent",
+ *     "created" = "created",
  *   },
  * )
  */

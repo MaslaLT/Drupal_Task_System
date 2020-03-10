@@ -31,8 +31,9 @@ class TaskForm extends FormBase {
     $query->condition('roles_target_id', 'developer', '=');
     $query->join('users_field_data', 'ufd', 'ur.entity_id = ufd.uid');
     $query->addField('ufd', 'name');
-    $seniorUserNames = $query->execute()->fetchCol();
-    $ucFirstDevNames = array_map('ucfirst', $seniorUserNames);
+    $query->addField('ufd', 'uid');
+    $developerUserNames = $query->execute()->fetchAllKeyed(1, 0);
+    $upCaseDeveloperUserNames = array_map("ucfirst", $developerUserNames);
 
     //Task description
     $form['description'] = [
@@ -62,9 +63,9 @@ class TaskForm extends FormBase {
     $form['assigned_for'] = [
       '#type' => 'select',
       '#title' => $this->t('Junior Developer Name'),
-      '#options' => $ucFirstDevNames,
+      '#options' => $upCaseDeveloperUserNames,
       '#empty_option' => $this->t('-select-'),
-      '#description' => $this->t('Junior developers name. Task is assigned for.')
+      '#description' => $this->t('Junior developers name. Task is assigned for.'),
     ];
 
     // Time given to complete a task in hours.
@@ -84,8 +85,8 @@ class TaskForm extends FormBase {
     // Tasks list.
     $form['task'] = [
       '#type' => 'textarea',
-      '#title' => $this->t('Task'),
-      '#description' => $this->t('Enter task here'),
+      '#title' => $this->t('Task details'),
+      '#description' => $this->t('Enter task details here'),
     ];
 
     // Submit button that handles the submission of the form.
@@ -94,7 +95,6 @@ class TaskForm extends FormBase {
       '#value' => $this->t('Create Task'),
       '#description' => $this->t('Submit a task'),
     ];
-
     return $form;
   }
 
@@ -102,24 +102,21 @@ class TaskForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    // Find out what was submitted.
-    $values = $form_state->getValues();
-    dump($values);
-    foreach ($values as $key => $value) {
-      $label = isset($form[$key]['#title']) ? $form[$key]['#title'] : $key;
-
-      // Many arrays return 0 for unselected values so lets filter that out.
-      if (is_array($value)) {
-        $value = array_filter($value);
-      }
-
-      // Only display for controls that have titles and values.
-      if ($value && $label) {
-        $display_value = is_array($value) ? preg_replace('/[\n\r\s]+/', ' ', print_r($value, 1)) : $value;
-        $message = $this->t('Value for %title: %value', ['%title' => $label, '%value' => $display_value]);
-        $this->messenger()->addMessage($message);
-      }
-    }
+    $currentUser = \Drupal::currentUser()->id();
+    $entity = \Drupal::entityTypeManager()->getStorage('task')
+      ->create([
+        'title' => $form_state->getValue('title'),
+        'url' => $form_state->getValue('url'),
+        'assigned_for' => $form_state->getValue('assigned_for'),
+        'time_needs_senior' => $form_state->getValue('time_needs_senior'),
+        'time_needs_junior' => $form_state->getValue('time_needs_junior'),
+        'task' => $form_state->getValue('task'),
+        'created_by' => $currentUser,
+        'status' => 'To do',
+        'time_spent' => 0,
+      ]);
+    \Drupal::messenger()->addMessage(t('Task %task is successful added.', ['%task' => $form_state->getValue('title')]));
+    $entity->save();
   }
 
 }
