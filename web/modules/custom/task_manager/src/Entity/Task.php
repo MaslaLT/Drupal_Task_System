@@ -29,6 +29,9 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *     "time_spent" = "time_spent",
  *     "created" = "created",
  *   },
+ *   handlers = {
+ *     "views_data" = "Drupal\task_manager\TaskViewsData",
+ *   },
  * )
  */
 class Task extends ContentEntityBase implements ContentEntityInterface {
