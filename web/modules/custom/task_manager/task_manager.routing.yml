@@ -1,7 +1,7 @@
-task_creation_form.simple_form:
-  path: '/tasks/create'
+entity.task_manager.settings:
+  path: 'admin/structure/task-manager'
   defaults:
-    _form:  '\Drupal\task_manager\Form\TaskForm'
-    _title: 'Task Creation Form'
+    _form: '\Drupal\task_manager\Form\TaskManagerSettingsForm'
+    _title: 'task_manager'
   requirements:
-    _permission: 'access content'
+    _permission: 'administer task_manager'

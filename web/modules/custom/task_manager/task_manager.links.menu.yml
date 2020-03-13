@@ -1,6 +1,10 @@
-task_creation.form:
-  title: 'Test'
-  description: 'Testing menu links'
-  route_name: task_creation_form.simple_form
-  weight: 10
-  menu_name: main
+entity.task_manager.settings:
+  title: task_manager
+  description: Configure a task_manager entity type
+  route_name:  entity.task_manager.settings
+  parent: system.admin_structure
+entity.task_manager.collection:
+  title: task_managers
+  description: List of task_managers
+  route_name: entity.task_manager.collection
+  parent: system.admin_content
