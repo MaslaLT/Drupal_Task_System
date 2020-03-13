@@ -52,7 +52,7 @@ class Task extends ContentEntityBase implements ContentEntityInterface {
         'text_processing' => 0,
       ]);
 
-    $fields['url'] = BaseFieldDefinition::create('string')
+    $fields['url'] = BaseFieldDefinition::create('uri')
       ->setLabel(t('Url'))
       ->setDescription(t('The external url for task.'))
       ->setSettings([
@@ -77,7 +77,7 @@ class Task extends ContentEntityBase implements ContentEntityInterface {
       ->setDescription(t('Time needed for junior to complete this task. In hours.'));
 
     $fields['task'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Url'))
+      ->setLabel(t('Task description'))
       ->setDescription(t('The external url for task.'))
       ->setSettings([
         'max_length' => 8000,
