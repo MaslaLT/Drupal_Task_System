@@ -1,5 +1,0 @@
-administer task_manager:
-  title: 'Administer task_manager settings'
-  restrict access: true
-access task_manager overview:
-  title: 'Access task_manager overview page'

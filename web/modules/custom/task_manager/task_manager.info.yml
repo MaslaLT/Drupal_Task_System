@@ -1,9 +1,5 @@
 name: 'Task Manager'
-type: module
-description: 'Provides a task_manager entity.'
+description: 'Task creation and management module'
 package: custom
+type: module
 core: 8.x
-core_version_requirement: ^8 || ^9
-dependencies:
-  - drupal:text
-configure: entity.task_manager.settings

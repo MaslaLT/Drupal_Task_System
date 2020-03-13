@@ -1,5 +1,0 @@
-task_manager.add_form:
-  route_name: entity.task_manager.add_form
-  title: 'Add New Task'
-  appears_on:
-    - entity.task_manager.collection
