@@ -1,10 +1,10 @@
 entity.task_manager.settings:
-  title: task_manager
+  title: Task Manager
   description: Configure a task_manager entity type
   route_name:  entity.task_manager.settings
   parent: system.admin_structure
 entity.task_manager.collection:
-  title: task_managers
+  title: Task Manager
   description: List of task_managers
   route_name: entity.task_manager.collection
   parent: system.admin_content

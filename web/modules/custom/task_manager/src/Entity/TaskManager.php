@@ -15,8 +15,8 @@ use Drupal\user\UserInterface;
  *
  * @ContentEntityType(
  *   id = "task_manager",
- *   label = @Translation("task_manager"),
- *   label_collection = @Translation("task_managers"),
+ *   label = @Translation("Task Manager"),
+ *   label_collection = @Translation("Task Managers"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\task_manager\TaskManagerListBuilder",

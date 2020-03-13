@@ -1,0 +1,26 @@
+uuid: d7bb6880-4a12-49e3-b3db-8f6f2a3c98ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.task_manager.field_time_senior_needs_
+  module:
+    - task_manager
+id: task_manager.task_manager.field_time_senior_needs_
+field_name: field_time_senior_needs_
+entity_type: task_manager
+bundle: task_manager
+label: 'Time Senior Needs '
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: Hour|Hours
+field_type: integer

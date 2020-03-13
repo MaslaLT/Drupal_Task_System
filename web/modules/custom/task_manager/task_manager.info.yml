@@ -1,7 +1,7 @@
-name: task_manager
+name: 'Task Manager'
 type: module
 description: 'Provides a task_manager entity.'
-package: Custom
+package: custom
 core: 8.x
 core_version_requirement: ^8 || ^9
 dependencies:

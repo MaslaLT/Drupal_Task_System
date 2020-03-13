@@ -2,6 +2,6 @@ entity.task_manager.settings:
   path: 'admin/structure/task-manager'
   defaults:
     _form: '\Drupal\task_manager\Form\TaskManagerSettingsForm'
-    _title: 'task_manager'
+    _title: 'Task Manager'
   requirements:
     _permission: 'administer task_manager'

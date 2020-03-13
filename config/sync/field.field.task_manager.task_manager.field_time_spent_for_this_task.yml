@@ -1,0 +1,24 @@
+uuid: fdf3adff-88cf-4881-b235-8f756477500f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.task_manager.field_time_spent_for_this_task
+  module:
+    - task_manager
+id: task_manager.task_manager.field_time_spent_for_this_task
+field_name: field_time_spent_for_this_task
+entity_type: task_manager
+bundle: task_manager
+label: 'Time Spent for this task'
+description: 'The total time spent to complete this task'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: Hour|Hours
+field_type: integer
