@@ -1,0 +1,11 @@
+tasks_manager.type_add:
+  route_name: entity.tasks_manager_type.add_form
+  title: 'Add tasks manager type'
+  appears_on:
+    - entity.tasks_manager_type.collection
+
+tasks_manager.add_page:
+  route_name: entity.tasks_manager.add_page
+  title: 'Add tasks manager'
+  appears_on:
+    - entity.tasks_manager.collection

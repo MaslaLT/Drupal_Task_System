@@ -1,0 +1,26 @@
+entity.tasks_manager.view:
+  title: View
+  route_name: entity.tasks_manager.canonical
+  base_route: entity.tasks_manager.canonical
+entity.tasks_manager.edit_form:
+  title: Edit
+  route_name: entity.tasks_manager.edit_form
+  base_route: entity.tasks_manager.canonical
+entity.tasks_manager.delete_form:
+  title: Delete
+  route_name: entity.tasks_manager.delete_form
+  base_route: entity.tasks_manager.canonical
+  weight: 10
+entity.tasks_manager.collection:
+  title: Tasks Manager
+  route_name: entity.tasks_manager.collection
+  base_route: system.admin_content
+  weight: 10
+entity.tasks_manager_type.edit_form:
+  title: Edit
+  route_name: entity.tasks_manager_type.edit_form
+  base_route: entity.tasks_manager_type.edit_form
+entity.tasks_manager_type.collection:
+  title: List
+  route_name: entity.tasks_manager_type.collection
+  base_route: entity.tasks_manager_type.collection

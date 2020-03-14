@@ -5,11 +5,3 @@ task_creation_form.simple_form:
     _title: 'Task Creation Form'
   requirements:
     _permission: 'access content'
-
-task_creation_form.content:
-  path: '/tasks'
-  defaults:
-    _controller:  '\Drupal\task_manager\Controller\TaskController::showTasks'
-    _title: 'Show all tasks'
-  requirements:
-    _permission: 'access content'

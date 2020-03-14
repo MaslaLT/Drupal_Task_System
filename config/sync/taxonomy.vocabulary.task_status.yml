@@ -1,0 +1,8 @@
+uuid: ab5b9a1d-41db-4bc7-a397-a0ea1c400640
+langcode: en
+status: true
+dependencies: {  }
+name: 'Task Status'
+vid: task_status
+description: 'Task status. To Do, Completed, In progress'
+weight: 0

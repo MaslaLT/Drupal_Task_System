@@ -1,0 +1,14 @@
+administer tasks manager types:
+  title: 'Administer tasks manager types'
+  description: 'Maintain the types of tasks manager entity.'
+  restrict access: true
+access tasks manager overview:
+  title: 'Access tasks manager overview page'
+delete tasks manager:
+  title: Delete tasks manager
+create tasks manager:
+  title: Create tasks manager
+view tasks manager:
+  title: View tasks manager
+edit tasks manager:
+  title: Edit tasks manager

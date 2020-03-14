@@ -1,0 +1,5 @@
+name: 'Email login'
+description: 'Login with email instead of username'
+package: custom
+type: module
+core: 8.x

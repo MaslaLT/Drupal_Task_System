@@ -29,6 +29,9 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *     "time_spent" = "time_spent",
  *     "created" = "created",
  *   },
+ *   handlers = {
+ *     "views_data" = "Drupal\task_manager\TaskViewsData",
+ *   },
  * )
  */
 class Task extends ContentEntityBase implements ContentEntityInterface {
@@ -49,7 +52,7 @@ class Task extends ContentEntityBase implements ContentEntityInterface {
         'text_processing' => 0,
       ]);
 
-    $fields['url'] = BaseFieldDefinition::create('string')
+    $fields['url'] = BaseFieldDefinition::create('uri')
       ->setLabel(t('Url'))
       ->setDescription(t('The external url for task.'))
       ->setSettings([
@@ -74,7 +77,7 @@ class Task extends ContentEntityBase implements ContentEntityInterface {
       ->setDescription(t('Time needed for junior to complete this task. In hours.'));
 
     $fields['task'] = BaseFieldDefinition::create('string')
-      ->setLabel(t('Url'))
+      ->setLabel(t('Task description'))
       ->setDescription(t('The external url for task.'))
       ->setSettings([
         'max_length' => 8000,
