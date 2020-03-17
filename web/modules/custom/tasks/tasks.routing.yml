@@ -1,0 +1,7 @@
+task_creation_form.simple_form:
+  path: '/tasks/create'
+  defaults:
+    _form:  '\Drupal\task_manager\Form\TaskForm'
+    _title: 'Task Creation Form'
+  requirements:
+    _permission: 'access content'

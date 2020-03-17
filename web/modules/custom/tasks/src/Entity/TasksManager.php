@@ -53,12 +53,12 @@ use Drupal\user\UserInterface;
  *     "revision_log_message" = "revision_log"
  *   },
  *   links = {
- *     "add-form" = "/admin/content/tasks-manager/add/{tasks_manager_type}",
- *     "add-page" = "/admin/content/tasks-manager/add",
+ *     "add-form" = "/tasks/add/{tasks_manager_type}",
+ *     "add-page" = "/tasks/add",
  *     "canonical" = "/tasks/{tasks_manager}",
- *     "edit-form" = "/admin/content/tasks-manager/{tasks_manager}/edit",
- *     "delete-form" = "/admin/content/tasks-manager/{tasks_manager}/delete",
- *     "collection" = "/admin/content/tasks-manager"
+ *     "edit-form" = "/tasks{tasks_manager}/edit",
+ *     "delete-form" = "/tasks/{tasks_manager}/delete",
+ *     "collection" = "/tasks"
  *   },
  *   bundle_entity_type = "tasks_manager_type",
  *   field_ui_base_route = "entity.tasks_manager_type.edit_form"

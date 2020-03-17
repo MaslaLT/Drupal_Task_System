@@ -6,6 +6,6 @@ tasks_manager.type_add:
 
 tasks_manager.add_page:
   route_name: entity.tasks_manager.add_page
-  title: 'Add tasks manager'
+  title: 'Add New Task'
   appears_on:
     - entity.tasks_manager.collection

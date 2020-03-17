@@ -2,6 +2,8 @@ uuid: eb4fb6e2-ceb5-457d-9f32-0879fc2f7174
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   theme:
     - bartik
 _core:
@@ -9,7 +11,7 @@ _core:
 id: bartik_local_actions
 theme: bartik
 region: content
-weight: -20
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:
@@ -17,4 +19,12 @@ settings:
   label: 'Primary admin actions'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      senior_tech_lead: senior_tech_lead
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

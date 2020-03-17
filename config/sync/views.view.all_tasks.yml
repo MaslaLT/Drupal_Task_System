@@ -8,6 +8,7 @@ dependencies:
   module:
     - tasks
     - text
+    - user
 id: all_tasks
 label: 'All tasks'
 module: views
@@ -23,8 +24,9 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -723,6 +725,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.permissions
       tags:
         - 'config:field.storage.tasks_manager.field_task_status'
   page_1:
@@ -743,5 +746,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - user.permissions
       tags:
         - 'config:field.storage.tasks_manager.field_task_status'
