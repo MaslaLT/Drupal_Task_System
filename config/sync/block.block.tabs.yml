@@ -1,6 +1,6 @@
 uuid: adf1a6d6-fe83-47a4-8d1f-b374f89dc527
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -9,7 +9,7 @@ dependencies:
 id: tabs
 theme: bartik
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

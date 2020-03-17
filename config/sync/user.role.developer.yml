@@ -6,4 +6,7 @@ id: developer
 label: Developer
 weight: -8
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access tasks manager overview'
+  - 'edit tasks manager'
+  - 'view tasks manager'

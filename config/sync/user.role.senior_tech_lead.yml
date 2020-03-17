@@ -6,4 +6,9 @@ id: senior_tech_lead
 label: 'Senior/Tech lead'
 weight: -7
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access tasks manager overview'
+  - 'create tasks manager'
+  - 'delete tasks manager'
+  - 'edit tasks manager'
+  - 'view tasks manager'

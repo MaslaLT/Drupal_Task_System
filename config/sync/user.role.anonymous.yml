@@ -12,5 +12,8 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'administer taxonomy'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view tasks manager'

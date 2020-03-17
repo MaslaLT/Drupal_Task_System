@@ -6,6 +6,10 @@ entity.tasks_manager.edit_form:
   title: Edit
   route_name: entity.tasks_manager.edit_form
   base_route: entity.tasks_manager.canonical
+entity.tasks_manager.add_form:
+  title: Add
+  route_name: entity.tasks_manager.add_form
+  base_route: entity.tasks_manager.canonical
 entity.tasks_manager.delete_form:
   title: Delete
   route_name: entity.tasks_manager.delete_form
