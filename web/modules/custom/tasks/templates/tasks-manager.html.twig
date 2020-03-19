@@ -16,6 +16,13 @@
 #}
 <article{{ attributes }}>
   {% if content %}
+    {% if task.add_time %}
+    <p>
+      <button type="button">
+        <a href="/tasks/{{ task.id }}/time">{% trans "Enter Time Spent" %}</a>
+      </button>
+    </p>
+    {% endif %}
     {{- content -}}
   {% endif %}
 </article>

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - system
     - user
   theme:
     - bartik
@@ -11,7 +12,7 @@ _core:
 id: bartik_local_actions
 theme: bartik
 region: content
-weight: -3
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:
@@ -28,3 +29,8 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /tasks
+    negate: false
+    context_mapping: {  }

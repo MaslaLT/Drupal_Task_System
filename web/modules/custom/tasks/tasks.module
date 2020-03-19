@@ -33,4 +33,24 @@ function template_preprocess_tasks_manager(array &$variables) {
   foreach (Element::children($variables['elements']) as $key) {
     $variables['content'][$key] = $variables['elements'][$key];
   }
+  $variables['task']['id'] = $variables['elements']['#contextual_links']['tasks_manager']['route_parameters']['tasks_manager'];
+  $variables['task']['add_time'] = false;
+  if(thisTasksDev($variables['task']['id'], currentUserId()) == true) {
+    $variables['task']['add_time'] = true;
+  }
+}
+
+function currentUserId() {
+  return \Drupal::currentUser()->id();
+}
+
+function thisTasksDev($taskId, $currentUser) {
+  $entity = \Drupal::entityTypeManager()->getStorage('tasks_manager')
+    ->load($taskId);
+  $assignedFor = $entity->get('assigned_for')
+  ->getValue()[0]['target_id'];
+  if($assignedFor == $currentUser) {
+    return true;
+  }
+  return false;
 }

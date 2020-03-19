@@ -1,7 +1,11 @@
 task_creation_form.simple_form:
-  path: '/tasks/create'
+  path: '/tasks/{tasks}/time'
   defaults:
-    _form:  '\Drupal\task_manager\Form\TaskForm'
-    _title: 'Task Creation Form'
+    _form:  '\Drupal\tasks\Form\TimeSpent'
+    _title: 'Enter time you spent for this task'
   requirements:
     _permission: 'access content'
+  options:
+    parameters:
+      tasks:
+        type: entity:tasks_manager

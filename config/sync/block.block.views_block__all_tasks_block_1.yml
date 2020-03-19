@@ -1,0 +1,32 @@
+uuid: 8b5d4855-27c4-44e4-889a-3db97bbbbf23
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.all_tasks
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__all_tasks_block_1
+theme: bartik
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:all_tasks-block_1'
+settings:
+  id: 'views_block:all_tasks-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

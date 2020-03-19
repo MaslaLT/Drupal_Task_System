@@ -12,3 +12,5 @@ view tasks manager:
   title: View tasks manager
 edit tasks manager:
   title: Edit tasks manager
+enter tieme spent for tasks:
+  title: Enter time spent

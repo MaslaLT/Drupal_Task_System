@@ -13,15 +13,15 @@ _core:
   default_config_hash: rH6PpAn7-RScha1rGkohGAYSSh_1OVeZzioJPzPw6O4
 id: bartik_tools
 theme: bartik
-region: sidebar_first
-weight: 0
+region: content
+weight: -8
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
-  label: Tools
+  label: 'Task Control'
   provider: system
-  label_display: visible
+  label_display: '0'
   level: 1
   depth: 0
   expand_all_items: false
@@ -29,7 +29,8 @@ visibility:
   user_role:
     id: user_role
     roles:
-      authenticated: authenticated
+      senior_tech_lead: senior_tech_lead
+      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
