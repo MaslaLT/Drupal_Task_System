@@ -56,9 +56,9 @@ use Drupal\user\UserInterface;
  *     "add-form" = "/tasks/add/{tasks_manager_type}",
  *     "add-page" = "/tasks/add",
  *     "canonical" = "/tasks/{tasks_manager}",
- *     "edit-form" = "/tasks{tasks_manager}/edit",
+ *     "edit-form" = "/tasks/{tasks_manager}/edit",
  *     "delete-form" = "/tasks/{tasks_manager}/delete",
- *     "collection" = "/tasks"
+ *     "collection" = "/admin/content/tasks"
  *   },
  *   bundle_entity_type = "tasks_manager_type",
  *   field_ui_base_route = "entity.tasks_manager_type.edit_form"

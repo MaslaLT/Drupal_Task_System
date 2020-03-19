@@ -9,4 +9,5 @@ is_admin: null
 permissions:
   - 'access tasks manager overview'
   - 'edit tasks manager'
+  - 'enter tieme spent for tasks'
   - 'view tasks manager'

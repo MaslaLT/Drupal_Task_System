@@ -9,14 +9,12 @@ module:
   comment: 0
   config: 0
   contact: 0
-  content_entity_example: 0
   contextual: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
   email_login: 0
-  examples: 0
   field: 0
   field_ui: 0
   file: 0
