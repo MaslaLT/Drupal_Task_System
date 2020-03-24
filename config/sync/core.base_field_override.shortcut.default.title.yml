@@ -1,0 +1,18 @@
+uuid: de6d4278-c7e4-429f-8a49-af0af272042a
+langcode: en
+status: true
+dependencies:
+  config:
+    - shortcut.set.default
+id: shortcut.default.title
+field_name: title
+entity_type: shortcut
+bundle: default
+label: Name
+description: 'The name of the shortcut.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

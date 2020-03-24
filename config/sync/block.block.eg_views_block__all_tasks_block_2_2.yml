@@ -1,0 +1,24 @@
+uuid: e3509254-4b0b-425e-a11e-7ca3f93d86cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.all_tasks
+  module:
+    - views
+  theme:
+    - eg
+id: eg_views_block__all_tasks_block_2_2
+theme: eg
+region: front
+weight: -5
+provider: null
+plugin: 'views_block:all_tasks-block_2'
+settings:
+  id: 'views_block:all_tasks-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

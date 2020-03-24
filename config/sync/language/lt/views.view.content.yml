@@ -1,0 +1,57 @@
+label: Turinys
+description: 'Surasti ir valdyti turinį.'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtruoti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      fields:
+        title:
+          label: Pavadinimas
+        type:
+          label: 'Turinio tipas'
+        name:
+          label: Autorius
+        status:
+          label: Būsena
+          settings:
+            format_custom_true: Paskelbtas
+            format_custom_false: Nepaskelbtas
+        changed:
+          label: Atnaujinta
+        operations:
+          label: Veiksmai
+      filters:
+        title:
+          expose:
+            label: Pavadinimas
+        type:
+          expose:
+            label: 'Turinio tipas'
+        status:
+          expose:
+            label: Būsena
+          group_info:
+            label: 'Paskelbta statusas'
+            group_items:
+              1:
+                title: Paskelbtas
+              2:
+                title: Nepaskelbtas
+        langcode:
+          expose:
+            label: Kalba
+      title: Turinys
+      empty:
+        area_text_custom:
+          content: 'Turinio nėra.'
+  page_1:
+    display_options:
+      menu:
+        title: Turinys
+      tab_options:
+        title: Turinys
+    display_title: Puslapis

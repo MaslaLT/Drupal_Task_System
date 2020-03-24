@@ -1,0 +1,36 @@
+label: 'Saviti blokai'
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        info:
+          label: 'Bloko aprašymas'
+        type:
+          label: 'Bloko tipas'
+        changed:
+          label: Atnaujinta
+        operations:
+          label: Veiksmai
+      filters:
+        info:
+          expose:
+            label: 'Bloko aprašymas'
+        type:
+          expose:
+            label: 'Bloko tipas'
+      title: 'Saviti blokai'
+  page_1:
+    display_title: Puslapis
+    display_options:
+      menu:
+        title: 'Saviti blokai'

@@ -1,0 +1,12 @@
+label: 'Naujausi komentarai'
+display:
+  default:
+    display_options:
+      title: 'Naujausi komentarai'
+      empty:
+        area_text_custom:
+          content: 'Nėra komentarų.'
+  block_1:
+    display_title: Blokas
+    display_options:
+      block_description: 'Naujausi komentarai'

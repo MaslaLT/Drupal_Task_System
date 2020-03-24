@@ -1,0 +1,32 @@
+uuid: ec3c966f-712d-405e-a231-c3a32db11f04
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.all_tasks
+  module:
+    - node
+    - views
+  theme:
+    - mytheme
+id: mytheme_views_block__all_tasks_block_3
+theme: mytheme
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:all_tasks-block_3'
+settings:
+  id: 'views_block:all_tasks-block_3'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

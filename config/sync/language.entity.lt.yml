@@ -1,0 +1,9 @@
+uuid: 9fbd4921-fb12-4ce0-9fea-1ff6249c8269
+langcode: en
+status: true
+dependencies: {  }
+id: lt
+label: Lithuanian
+direction: ltr
+weight: 1
+locked: false
