@@ -1,0 +1,18 @@
+uuid: cc93e897-ffdb-4ada-9f4e-1007667e9928
+langcode: en
+status: true
+dependencies:
+  config:
+    - tasks.tasks_manager_type.tasks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: tasks_manager.tasks
+target_entity_type_id: tasks_manager
+target_bundle: tasks
+default_langcode: site_default
+language_alterable: true

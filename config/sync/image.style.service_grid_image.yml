@@ -1,0 +1,15 @@
+uuid: c4febfdd-6c32-4a0f-8c12-3096c0c670af
+langcode: en
+status: true
+dependencies: {  }
+name: service_grid_image
+label: 'Service grid image 300X150'
+effects:
+  f06e1fd2-6069-4806-bb9b-d38b6d63a37f:
+    uuid: f06e1fd2-6069-4806-bb9b-d38b6d63a37f
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 150
+      upscale: false
