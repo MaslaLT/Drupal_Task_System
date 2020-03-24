@@ -16,4 +16,3 @@ permissions:
   - 'administer taxonomy'
   - 'search content'
   - 'use text format restricted_html'
-  - 'view tasks manager'

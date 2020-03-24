@@ -2,6 +2,8 @@ uuid: eb78d6b2-cadd-489e-a2df-94e148b9e3f7
 langcode: en
 status: false
 dependencies:
+  module:
+    - system
   theme:
     - bartik
 _core:
@@ -9,7 +11,7 @@ _core:
 id: bartik_page_title
 theme: bartik
 region: content
-weight: -1
+weight: -5
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

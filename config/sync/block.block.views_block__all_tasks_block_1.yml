@@ -6,13 +6,14 @@ dependencies:
     - views.view.all_tasks
   module:
     - node
+    - system
     - views
   theme:
     - bartik
 id: views_block__all_tasks_block_1
 theme: bartik
 region: content
-weight: -4
+weight: -2
 provider: null
 plugin: 'views_block:all_tasks-block_1'
 settings:
@@ -30,3 +31,8 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /node/10
+    negate: false
+    context_mapping: {  }

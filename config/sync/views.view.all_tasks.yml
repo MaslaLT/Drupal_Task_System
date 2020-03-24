@@ -6,6 +6,7 @@ dependencies:
     - field.storage.tasks_manager.field_task_status
     - system.menu.main
     - taxonomy.vocabulary.task_status
+    - user.role.authenticated
   content:
     - 'taxonomy_term:task_status:911e6ba1-521d-4f50-8e1e-f3f7c96d8cff'
     - 'taxonomy_term:task_status:a2c2773a-9ddf-48fd-87b5-2bf3ddef1a62'
@@ -30,9 +31,10 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -844,7 +846,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.tasks_manager.field_task_status'
   block_1:
@@ -865,7 +867,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.tasks_manager.field_task_status'
   block_2:
@@ -942,7 +944,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.tasks_manager.field_task_status'
   block_3:
@@ -1016,7 +1018,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.tasks_manager.field_task_status'
   page_1:
@@ -1031,6 +1033,7 @@ display:
         type: normal
         title: Tasks
         menu_name: main
+        enabled: false
       filters: {  }
       defaults:
         filters: false
@@ -1044,6 +1047,99 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user.permissions
+        - user.roles
+      tags:
+        - 'config:field.storage.tasks_manager.field_task_status'
+  page_2:
+    display_plugin: page
+    id: page_2
+    display_title: 'Page 2'
+    position: 5
+    display_options:
+      display_extenders: {  }
+      title: 'My Tasks'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+        relationships: false
+        empty: false
+      filters:
+        uid_current:
+          id: uid_current
+          table: users
+          field: uid_current
+          relationship: assigned_for
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: user
+          plugin_id: user_current
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      relationships:
+        assigned_for:
+          id: assigned_for
+          table: tasks_manager_field_data
+          field: assigned_for
+          relationship: none
+          group_type: group
+          admin_label: User
+          required: false
+          entity_type: tasks_manager
+          entity_field: assigned_for
+          plugin_id: standard
+      path: mytasks
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content: 'No tasks assigned for you. '
+          plugin_id: text_custom
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+        - user.roles
       tags:
         - 'config:field.storage.tasks_manager.field_task_status'
