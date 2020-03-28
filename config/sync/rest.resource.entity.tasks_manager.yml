@@ -1,0 +1,40 @@
+uuid: 6da99212-6d0a-4f00-853c-f8df347df80e
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - serialization
+    - tasks
+    - user
+_core:
+  default_config_hash: 5WueCcEctYERJQjgu6pfKHDuoCrnBmIKPQ12KX5aEkE
+id: entity.tasks_manager
+plugin_id: 'entity:tasks_manager'
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie
+  POST:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie
+  DELETE:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - basic_auth
+      - cookie
+  PATCH:
+    supported_formats:
+      - json
+      - xml
+    supported_auth:
+      - cookie

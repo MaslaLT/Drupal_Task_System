@@ -5,6 +5,7 @@
  * Provides a tasks manager entity type.
  */
 
+use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Render\Element;
 
 /**

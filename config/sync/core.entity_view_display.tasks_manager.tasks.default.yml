@@ -15,17 +15,16 @@ mode: default
 content:
   assigned_for:
     label: above
-    type: entity_reference_entity_view
-    weight: 15
+    type: entity_reference_label
+    weight: 10
     region: content
     settings:
-      view_mode: default
       link: false
     third_party_settings: {  }
   created:
-    label: above
+    label: inline
     type: timestamp
-    weight: 20
+    weight: 7
     region: content
     settings:
       date_format: medium
@@ -34,24 +33,24 @@ content:
     third_party_settings: {  }
   description:
     type: text_default
-    label: above
-    weight: 10
+    label: inline
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_task_status:
     type: entity_reference_label
-    weight: 0
+    weight: 8
     region: content
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
   status:
     type: boolean
-    weight: 0
+    weight: 1
     region: content
-    label: above
+    label: inline
     settings:
       format: default
       format_custom_false: ''
@@ -59,8 +58,8 @@ content:
     third_party_settings: {  }
   time_needs_junior:
     type: number_integer
-    label: above
-    weight: 10
+    label: inline
+    weight: 6
     region: content
     settings:
       thousand_separator: ''
@@ -68,8 +67,8 @@ content:
     third_party_settings: {  }
   time_needs_senior:
     type: number_integer
-    label: above
-    weight: 10
+    label: inline
+    weight: 5
     region: content
     settings:
       thousand_separator: ''
@@ -77,8 +76,8 @@ content:
     third_party_settings: {  }
   time_spent:
     type: number_integer
-    label: above
-    weight: 10
+    label: inline
+    weight: 4
     region: content
     settings:
       thousand_separator: ''
@@ -87,7 +86,7 @@ content:
   title:
     label: hidden
     type: string
-    weight: -5
+    weight: 0
     region: content
     settings:
       link_to_entity: false
@@ -95,17 +94,16 @@ content:
   uid:
     label: above
     type: author
-    weight: 15
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   url:
-    type: string
-    label: above
-    weight: 10
+    type: uri_link
+    label: inline
+    weight: 3
     region: content
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
 hidden:
   langcode: true

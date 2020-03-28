@@ -17,14 +17,24 @@
     ],
     "require": {
         "php": ">=7.1",
-        "composer/installers": "^1.2",
+        "composer/installers": "~1.0",
         "cweagans/composer-patches": "^1.6.5",
+        "drupal/charts": "^3.1",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/restui": "^1.17",
         "drush/drush": "^9.7.1 | ^10.0.0",
+        "highcharts/3d": "6.1.0",
+        "highcharts/accessibility": "6.1.0",
+        "highcharts/export-data": "6.1.0",
+        "highcharts/exporting": "6.1.0",
+        "highcharts/highcharts": "6.1.0",
+        "highcharts/more": "6.1.0",
+        "oomphinc/composer-installers-extender": "^1.1",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
+        "wikimedia/composer-merge-plugin": "^1.4",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
@@ -62,6 +72,20 @@
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "web/libraries/{$name}": [
+            "type:drupal-library",
+            "type:bower-asset",
+            "type:npm-asset"
+        ],
+        "merge-plugin": {
+            "include": [
+                "web/modules/contrib/charts/modules/charts_highcharts/composer.json"
+            ]
         },
         "drupal-scaffold": {
             "locations": {

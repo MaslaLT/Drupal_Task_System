@@ -16,6 +16,7 @@ permissions:
   - 'access taxonomy overview'
   - 'administer rsvp_list'
   - 'administer taxonomy'
+  - 'create article content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
