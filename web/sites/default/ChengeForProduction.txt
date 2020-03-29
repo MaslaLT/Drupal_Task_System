@@ -1,0 +1,2 @@
+Before deploying site to production:
+  Delete settings.local.php to disable twig debugging and use drupal caches.
