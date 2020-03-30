@@ -1,0 +1,8 @@
+name: "Tasks Theme"
+description: "Theme for my tasks module"
+type: theme
+core: 8.x
+base theme: classy
+
+libraries:
+  - tasks/global-styling
