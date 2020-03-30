@@ -5,4 +5,4 @@ core: 8.x
 base theme: classy
 
 libraries:
-  - tasks/global-styling
+  - tasker/global-styling
