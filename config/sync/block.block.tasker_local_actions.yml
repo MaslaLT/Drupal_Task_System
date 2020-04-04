@@ -1,0 +1,36 @@
+uuid: 0a77d1ba-9984-41ea-8413-fc481efc58a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - tasker
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: tasker_local_actions
+theme: tasker
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      senior_tech_lead: senior_tech_lead
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /tasks
+    negate: false
+    context_mapping: {  }
