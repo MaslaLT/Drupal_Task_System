@@ -1,0 +1,32 @@
+uuid: b4e45563-0dd0-4fa9-8052-ff96554c86ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.all_tasks
+  module:
+    - node
+    - views
+  theme:
+    - tasker
+id: tasker_views_block__all_tasker_block_2
+theme: tasker
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:all_tasks-block_2'
+settings:
+  id: 'views_block:all_tasks-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,4 +1,4 @@
-uuid: 26ae3567-59ab-48f7-911b-70b56c06224a
+uuid: c871fd10-432c-4fe6-9141-a791920759d3
 langcode: en
 status: false
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - views
   theme:
-    - tasks
-id: views_block__all_tasks_block_2_2
-theme: tasks
+    - tasker
+id: tasker_views_block__all_tasks_block_2_2
+theme: tasker
 region: sidebar_first
 weight: 0
 provider: null

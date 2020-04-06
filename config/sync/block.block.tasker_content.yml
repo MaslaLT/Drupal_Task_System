@@ -1,0 +1,22 @@
+uuid: 4c86d597-8627-4b30-97e8-fd63be4b62cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tasker
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: tasker_content
+theme: tasker
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

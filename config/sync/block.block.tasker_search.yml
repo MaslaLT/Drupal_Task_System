@@ -1,0 +1,31 @@
+uuid: a79fdbd6-533b-4ddf-8565-280df9cc3d19
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - user
+  theme:
+    - tasker
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: tasker_search
+theme: tasker
+region: sidebar_first
+weight: -6
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
