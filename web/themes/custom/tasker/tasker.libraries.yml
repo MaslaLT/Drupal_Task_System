@@ -2,10 +2,9 @@ global-styling:
   css:
     theme:
       css/global.css: {}
-#      bootstrap/css/bootstrap.min.css: {}
+      build/css/global_bundle.css: {}
   js:
-    js/main.js: {}
-#    bootstrap/js/bootstrap.bundle.min.js: {}
+    build/js/bundle.js: {}
   dependencies:
     - core/jquery
 

@@ -1,3 +1,2 @@
-jQuery(document).ready(function () {
-  //alert('Just testing');
-});
+import '../scss/global.scss';
+import '../js/js_files/global';
