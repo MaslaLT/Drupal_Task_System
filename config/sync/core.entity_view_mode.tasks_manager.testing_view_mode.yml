@@ -1,0 +1,10 @@
+uuid: 0d811b05-645d-4956-b864-4117a931e2fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - tasks
+id: tasks_manager.testing_view_mode
+label: 'Testing view mode'
+targetEntityType: tasks_manager
+cache: true

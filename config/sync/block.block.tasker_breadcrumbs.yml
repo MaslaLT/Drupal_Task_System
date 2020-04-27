@@ -1,6 +1,6 @@
-uuid: c5d89c17-8dc9-4ba8-886e-8c53f88cd64b
+uuid: 0d9faa18-8d4a-44de-b5c4-6c31c284cbe3
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: tasker_breadcrumbs
 theme: tasker
-region: header
+region: breadcrumb
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

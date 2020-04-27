@@ -104,7 +104,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function(jQuery) {jQuery(document).ready(function () {\n  alert('Just testing');\n});\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/js/js_files/global.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {\n  alert('Just testing');\n});\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/js/js_files/global.js?");
 
 /***/ }),
 

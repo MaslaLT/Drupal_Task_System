@@ -1,4 +1,4 @@
-uuid: 24dc5f7b-3c2d-46cd-8fd6-8c2388c072c2
+uuid: 2f784c97-d2a0-46e7-b656-2da94c54cf32
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: tasker_footer
 theme: tasker
-region: sidebar_first
+region: footer_fifth
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

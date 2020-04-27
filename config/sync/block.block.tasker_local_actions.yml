@@ -1,4 +1,4 @@
-uuid: 0a77d1ba-9984-41ea-8413-fc481efc58a1
+uuid: 6c98c410-9058-4ddd-b5d3-127e8d69554a
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ _core:
 id: tasker_local_actions
 theme: tasker
 region: content
-weight: -5
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

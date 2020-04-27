@@ -1,13 +1,13 @@
-uuid: 5279625d-73aa-456f-952f-56e1a36a7f42
+uuid: 47ed65ac-6db6-4ff3-812c-184323360ef7
 langcode: en
 status: true
 dependencies:
   theme:
-    - eg
+    - tasker
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: eg_local_eg
-theme: eg
+id: tasker_local_tasks
+theme: tasker
 region: content
 weight: -9
 provider: null

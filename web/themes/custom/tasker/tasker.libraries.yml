@@ -1,10 +1,10 @@
 global-styling:
   css:
     theme:
-      css/global.css: {}
       build/css/global_bundle.css: {}
   js:
     build/js/bundle.js: {}
+
   dependencies:
     - core/jquery
 

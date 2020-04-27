@@ -1,4 +1,4 @@
-uuid: 83988253-bbbb-4855-afc4-1816caf62c2d
+uuid: 55810b85-2403-4933-97e3-75077faff895
 langcode: en
 status: true
 dependencies:
@@ -6,13 +6,14 @@ dependencies:
     - system.menu.main
   module:
     - system
+    - user
   theme:
     - tasker
 _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: tasker_main_menu
 theme: tasker
-region: header
+region: primary_menu
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
@@ -24,4 +25,11 @@ settings:
   level: 1
   depth: 1
   expand_all_items: false
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

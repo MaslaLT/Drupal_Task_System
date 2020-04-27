@@ -1,6 +1,6 @@
-uuid: f245858f-dce7-427e-99a6-99c8d4e74e8c
+uuid: 648d825a-a912-420d-8562-c0e0200a592d
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -14,7 +14,7 @@ _core:
 id: tasker_tools
 theme: tasker
 region: content
-weight: -8
+weight: -1
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

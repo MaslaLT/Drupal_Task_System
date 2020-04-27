@@ -1,0 +1,10 @@
+uuid: 8ec3f351-8fc0-4cbd-85d3-f4c2fd31d0c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - tasks
+id: tasks_manager.one_more_test
+label: 'One more test'
+targetEntityType: tasks_manager
+cache: true

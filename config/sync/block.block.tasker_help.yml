@@ -1,4 +1,4 @@
-uuid: baae19df-0396-4cd5-8ab8-74dc56e0e144
+uuid: 97087a6d-b9ae-4cad-bbf1-5846cc0b0ebf
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: tasker_help
 theme: tasker
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: help_block
 settings:

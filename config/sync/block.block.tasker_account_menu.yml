@@ -1,6 +1,6 @@
-uuid: 99f1a5ae-6224-47bb-8b9c-5a8ea0138a55
+uuid: 8481521f-e1fa-4739-84c8-e8f9b82a65d1
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -12,8 +12,8 @@ _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
 id: tasker_account_menu
 theme: tasker
-region: header
-weight: 0
+region: secondary_menu
+weight: -9
 provider: null
 plugin: 'system_menu_block:account'
 settings:
