@@ -1,0 +1,29 @@
+#logo {
+  position: relative;
+  top: 0.4rem;
+  width: 25vh;
+  height: auto;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#logo-link {
+  text-decoration: none;
+}
+
+#site-name {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Bookman Old Style";
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+#slogan {
+  right: 30px;
+  padding: 0.1rem;
+  font-size: 0.9rem;
+  font-family: "Bookman Old Style";
+}

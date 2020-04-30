@@ -104,7 +104,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {\n  alert('Just testing');\n});\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/js/js_files/global.js?");
+eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {\n  //alert('Just testing');\n});\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/js/js_files/global.js?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/global.scss */ \"./web/themes/custom/tasker/source/scss/global.scss\");\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_global_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_js_files_global__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/js_files/global */ \"./web/themes/custom/tasker/source/js/js_files/global.js\");\n/* harmony import */ var _js_js_files_global__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_js_files_global__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/global.scss */ \"./web/themes/custom/tasker/source/scss/global.scss\");\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_global_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/header.scss */ \"./web/themes/custom/tasker/source/scss/header.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_header_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/site-branding.scss */ \"./web/themes/custom/tasker/source/scss/site-branding.scss\");\n/* harmony import */ var _scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_header_menu_primary_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/header-menu-primary.scss */ \"./web/themes/custom/tasker/source/scss/header-menu-primary.scss\");\n/* harmony import */ var _scss_header_menu_primary_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_header_menu_primary_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_js_files_global__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/js_files/global */ \"./web/themes/custom/tasker/source/js/js_files/global.js\");\n/* harmony import */ var _js_js_files_global__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_js_files_global__WEBPACK_IMPORTED_MODULE_4__);\n\n// ** SCSS **\n\n\n\n\n\n// ** JS **\n\n\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/js/main.js?");
 
 /***/ }),
 
@@ -128,6 +128,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/global.scss?");
+
+/***/ }),
+
+/***/ "./web/themes/custom/tasker/source/scss/header-menu-primary.scss":
+/*!***********************************************************************!*\
+  !*** ./web/themes/custom/tasker/source/scss/header-menu-primary.scss ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/header-menu-primary.scss?");
+
+/***/ }),
+
+/***/ "./web/themes/custom/tasker/source/scss/header.scss":
+/*!**********************************************************!*\
+  !*** ./web/themes/custom/tasker/source/scss/header.scss ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/header.scss?");
+
+/***/ }),
+
+/***/ "./web/themes/custom/tasker/source/scss/site-branding.scss":
+/*!*****************************************************************!*\
+  !*** ./web/themes/custom/tasker/source/scss/site-branding.scss ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/site-branding.scss?");
 
 /***/ }),
 
