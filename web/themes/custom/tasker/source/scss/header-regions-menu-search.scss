@@ -1,0 +1,19 @@
+.header div [role=search] {
+  display: inline-block;
+}
+
+.header div [role=search] div input{
+  width: 20vw;
+}
+
+.header div [role=search] h2{
+  display: none;
+}
+
+#search-icon {
+  display: inline-block;
+  position: relative;
+  top: 0.2rem;
+  width: 1.2rem;
+  height: auto;
+}

@@ -1,18 +1,18 @@
-.header-nav {
+.header div [role=navigation]{
   display: inline-block;
 }
 
-.header-nav ul {
+.header div [role=navigation] ul {
   list-style: none;
 }
 
-.header-nav ul li{
+.header div [role=navigation] ul li{
   display: inline-block;
   padding: 0.3rem;
   margin: 0.1rem;
 }
 
-.header-nav ul li a{
+.header div [role=navigation] ul li a{
   padding: 0.4rem 0.8rem;
   margin: 0.1rem;
   border-radius: 8px;
