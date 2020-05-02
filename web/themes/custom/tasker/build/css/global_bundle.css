@@ -24,7 +24,7 @@ h2 {
   background-color: white;
   border: 1px solid #cccccc;
   border-radius: 5px;
-  padding: 0.3rem; }
+  padding: 0.2rem; }
 
 input[value="Search"] {
   display: none;
@@ -90,7 +90,29 @@ input[value="Search"] {
 #search-icon {
   display: inline-block;
   position: relative;
+  right: 2vw;
   top: 0.2rem;
   width: 1.2rem;
   height: auto; }
+
+#breadcrumb {
+  background-color: #5a8bed;
+  display: block; }
+
+#breadcrumb [role="navigation"] ol {
+  margin-left: 2rem; }
+
+#breadcrumb [role="navigation"] ol li {
+  display: inline-block;
+  padding: 0.2rem;
+  margin-left: 0.1rem; }
+
+#breadcrumb [role="navigation"] ol li a {
+  color: #cccccc;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  text-decoration: none; }
+
+#breadcrumb [role="navigation"] ol li a::after {
+  content: " / "; }
 
