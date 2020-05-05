@@ -1,17 +1,34 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
+html {
+  min-height: 100vh;
+  background-color: antiquewhite;
+}
+body {
+  min-height: 100%;
+  font: $font-stack;
+  color: $primary-color;
+}
+
+.dialog-off-canvas-main-canvas {
+  min-height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font: $font-stack;
-  color: $primary-color;
-}
-
 h2 {
   font-size: 1.2rem;
+}
+
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-flow: column nowrap;
 }

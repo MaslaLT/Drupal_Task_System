@@ -116,7 +116,7 @@ eval("/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {\n
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/global.scss */ \"./web/themes/custom/tasker/source/scss/global.scss\");\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_global_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/header.scss */ \"./web/themes/custom/tasker/source/scss/header.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_header_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _scss_block_search_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/block-search.scss */ \"./web/themes/custom/tasker/source/scss/block-search.scss\");\n/* harmony import */ var _scss_block_search_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_block_search_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/site-branding.scss */ \"./web/themes/custom/tasker/source/scss/site-branding.scss\");\n/* harmony import */ var _scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _scss_header_regions_menu_navigation_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../scss/header-regions-menu-navigation.scss */ \"./web/themes/custom/tasker/source/scss/header-regions-menu-navigation.scss\");\n/* harmony import */ var _scss_header_regions_menu_navigation_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_scss_header_regions_menu_navigation_scss__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _scss_header_regions_menu_search_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../scss/header-regions-menu-search.scss */ \"./web/themes/custom/tasker/source/scss/header-regions-menu-search.scss\");\n/* harmony import */ var _scss_header_regions_menu_search_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_scss_header_regions_menu_search_scss__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _scss_breadcrumb_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../scss/breadcrumb.scss */ \"./web/themes/custom/tasker/source/scss/breadcrumb.scss\");\n/* harmony import */ var _scss_breadcrumb_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_breadcrumb_scss__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _js_js_files_global__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../js/js_files/global */ \"./web/themes/custom/tasker/source/js/js_files/global.js\");\n/* harmony import */ var _js_js_files_global__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_js_files_global__WEBPACK_IMPORTED_MODULE_7__);\n// ** SCSS **\n\n\n\n\n\n\n\n\n// ** JS **\n\n\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/global.scss */ \"./web/themes/custom/tasker/source/scss/global.scss\");\n/* harmony import */ var _scss_global_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_global_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/header.scss */ \"./web/themes/custom/tasker/source/scss/header.scss\");\n/* harmony import */ var _scss_header_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_header_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _scss_block_search_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scss/block-search.scss */ \"./web/themes/custom/tasker/source/scss/block-search.scss\");\n/* harmony import */ var _scss_block_search_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_block_search_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/site-branding.scss */ \"./web/themes/custom/tasker/source/scss/site-branding.scss\");\n/* harmony import */ var _scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scss_site_branding_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _scss_header_regions_menu_navigation_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../scss/header-regions-menu-navigation.scss */ \"./web/themes/custom/tasker/source/scss/header-regions-menu-navigation.scss\");\n/* harmony import */ var _scss_header_regions_menu_navigation_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_scss_header_regions_menu_navigation_scss__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _scss_header_regions_menu_search_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../scss/header-regions-menu-search.scss */ \"./web/themes/custom/tasker/source/scss/header-regions-menu-search.scss\");\n/* harmony import */ var _scss_header_regions_menu_search_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_scss_header_regions_menu_search_scss__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _scss_breadcrumb_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../scss/breadcrumb.scss */ \"./web/themes/custom/tasker/source/scss/breadcrumb.scss\");\n/* harmony import */ var _scss_breadcrumb_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_breadcrumb_scss__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _scss_sidebar_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../scss/sidebar.scss */ \"./web/themes/custom/tasker/source/scss/sidebar.scss\");\n/* harmony import */ var _scss_sidebar_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_scss_sidebar_scss__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _scss_content_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../scss/content.scss */ \"./web/themes/custom/tasker/source/scss/content.scss\");\n/* harmony import */ var _scss_content_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_scss_content_scss__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../scss/main.scss */ \"./web/themes/custom/tasker/source/scss/main.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../scss/footer.scss */ \"./web/themes/custom/tasker/source/scss/footer.scss\");\n/* harmony import */ var _scss_footer_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_scss_footer_scss__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _js_js_files_global__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../js/js_files/global */ \"./web/themes/custom/tasker/source/js/js_files/global.js\");\n/* harmony import */ var _js_js_files_global__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_js_js_files_global__WEBPACK_IMPORTED_MODULE_11__);\n// ** SCSS **\n\n\n\n\n\n\n\n\n\n\n\n\n// ** JS **\n\n\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/js/main.js?");
 
 /***/ }),
 
@@ -139,6 +139,28 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/breadcrumb.scss?");
+
+/***/ }),
+
+/***/ "./web/themes/custom/tasker/source/scss/content.scss":
+/*!***********************************************************!*\
+  !*** ./web/themes/custom/tasker/source/scss/content.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/content.scss?");
+
+/***/ }),
+
+/***/ "./web/themes/custom/tasker/source/scss/footer.scss":
+/*!**********************************************************!*\
+  !*** ./web/themes/custom/tasker/source/scss/footer.scss ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/footer.scss?");
 
 /***/ }),
 
@@ -183,6 +205,28 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/header.scss?");
+
+/***/ }),
+
+/***/ "./web/themes/custom/tasker/source/scss/main.scss":
+/*!********************************************************!*\
+  !*** ./web/themes/custom/tasker/source/scss/main.scss ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/main.scss?");
+
+/***/ }),
+
+/***/ "./web/themes/custom/tasker/source/scss/sidebar.scss":
+/*!***********************************************************!*\
+  !*** ./web/themes/custom/tasker/source/scss/sidebar.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./web/themes/custom/tasker/source/scss/sidebar.scss?");
 
 /***/ }),
 
