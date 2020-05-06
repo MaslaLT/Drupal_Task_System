@@ -10,6 +10,8 @@ import '../scss/sidebar.scss';
 import '../scss/content.scss';
 import '../scss/main.scss';
 import '../scss/footer.scss';
+import '../scss/under-header.scss';
+import '../scss/language-field.scss';
 
 // ** JS **
-import '../js/js_files/global';
+import '../js/js_files/side-menu';

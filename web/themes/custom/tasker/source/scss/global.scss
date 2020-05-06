@@ -2,8 +2,9 @@ $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
 html {
+  font-size: 16px;
   min-height: 100vh;
-  background-color: antiquewhite;
+  background-color: lightsteelblue;
 }
 body {
   min-height: 100%;
@@ -22,7 +23,7 @@ body {
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .layout-container {

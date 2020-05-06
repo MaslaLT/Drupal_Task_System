@@ -53,7 +53,15 @@
     {{ page.secondary_menu }}
   </header>
 
-  {{ page.breadcrumb }}
+  <div id="under-header">
+    <a href="#">
+      <img id="burger-icon" src="/{{ directory }}/source/icons/hamburger.svg" alt="hamburger"/>
+    </a>
+
+    {{ page.breadcrumb }}
+
+    {{ page.lang_switch }}
+  </div>
 
   {{ page.highlighted }}
 
@@ -69,15 +77,26 @@
     {% endif %}
 
     <div class="layout-content">
+      {% if page.content_header %}
+        {{ page.content_header }}
+      {% endif %}
+
       {{ page.content }}
+
+      {% if page.content_footer %}
+        {{ page.content_footer }}
+      {% endif %}
     </div>{# /.layout-content #}
 
   </main>
 
   <footer role="contentinfo">
-    {% if page.footer %}
-      {{ page.footer }}
-    {% endif %}
+
+      <div id="footer-long">
+        {{ page.footer_long }}
+        <p>&copy; {{ 'now'|date('Y') }} maselart.com<p>
+      </div>
+
   </footer>
 
 </div>{# /.layout-container #}

@@ -1,0 +1,32 @@
+.language-switcher-language-url h2{
+  display: none;
+}
+
+.language-switcher-language-url {
+  display: flex;
+  align-items: center;
+}
+
+#lang-switch {
+  margin-left: auto;
+  margin-right: 0.5rem;
+  display: flex;
+}
+
+#lang-switch div ul li{
+  display: inline-block;
+  padding: 0 0.2rem;
+}
+
+#lang-switch div ul li a{
+  padding: 0.1rem;
+  color: #cccccc;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#lang-switch div ul li a:hover {
+  color: black;
+  font-weight: bold;
+}

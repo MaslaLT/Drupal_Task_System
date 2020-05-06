@@ -1,5 +1,42 @@
 .layout-sidebar-first {
   background-color: whitesmoke;
   display: flex;
-  width: 14rem;
+  width: 16rem;
+  box-shadow: 1px 0 5px #6b6b6b;
+}
+
+.layout-sidebar-first div{
+  width: 100%;
+}
+
+.layout-sidebar-first div h2{
+  color: dimgrey;
+  width: 90%;
+  margin: 1rem 0.5rem 0.5rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.1rem;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px grey solid;
+
+}
+
+.layout-sidebar-first div ul li {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0.1rem 0;
+  background-color: lightgray;
+}
+
+.layout-sidebar-first div ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.layout-sidebar-first div ul li:hover {
+  background-color: darkgray;
 }
