@@ -1,4 +1,4 @@
-uuid: 19590c30-4026-44b8-9782-d049f3e8ff55
+uuid: 4be45d98-5083-470f-8f93-336ee2ead5f3
 langcode: en
 status: true
 dependencies:
@@ -6,10 +6,10 @@ dependencies:
     - language
   theme:
     - tasker
-id: tasker_languageswitcher
+id: languageswitcher_2
 theme: tasker
-region: sidebar_first
-weight: -7
+region: lang_switch
+weight: 0
 provider: null
 plugin: 'language_block:language_interface'
 settings:

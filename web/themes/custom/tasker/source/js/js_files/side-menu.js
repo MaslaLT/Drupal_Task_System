@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $('#burger-icon').click(function () {
-    console.log('clicked');
-    $('.layout-sidebar-first').toggle(30)
+    $('.layout-sidebar-first').toggle(30);
   });
 });

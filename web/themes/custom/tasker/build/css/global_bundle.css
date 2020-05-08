@@ -11,9 +11,11 @@ body {
 .dialog-off-canvas-main-canvas {
   min-height: 100vh; }
 
+a {
+  text-decoration: none; }
+
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box; }
 
 h2 {
@@ -38,7 +40,8 @@ h2 {
 
 #burger-icon {
   height: 1.8rem;
-  margin-left: 0.3rem; }
+  margin-left: 0.3rem;
+  cursor: pointer; }
 
 .form-search {
   background-color: white;
@@ -159,6 +162,7 @@ input[value="Search"] {
   width: 100%; }
 
 .layout-sidebar-first div h2 {
+  text-align: right;
   color: dimgrey;
   width: 90%;
   margin: 1rem 0.5rem 0.5rem;
@@ -168,6 +172,9 @@ input[value="Search"] {
   font-size: 14px;
   font-weight: bold;
   border-bottom: 1px grey solid; }
+
+.layout-sidebar-first div ul {
+  padding-left: 0; }
 
 .layout-sidebar-first div ul li {
   display: block;
@@ -180,7 +187,8 @@ input[value="Search"] {
   color: black;
   font-weight: bold;
   font-size: 1rem;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem 0.5rem 0.1rem; }
 
 .layout-sidebar-first div ul li:hover {
   background-color: darkgray; }
@@ -191,10 +199,34 @@ input[value="Search"] {
   flex-flow: column;
   width: 100%; }
 
+.layout-content div > div {
+  margin: 1rem 0.5rem 1.5rem 0.5rem; }
+
 .layout-content h1 {
-  margin: 0.3rem 1rem 1rem 0.3rem;
+  margin: 0.3rem;
   text-transform: capitalize;
   font-size: 1.2rem; }
+
+#block-tasker-local-tasks ul {
+  list-style: none;
+  border-bottom: grey 1px solid;
+  margin-bottom: 0.5rem; }
+
+#block-tasker-local-tasks ul li {
+  display: inline-block;
+  margin: 0.8rem 0.1rem; }
+
+#block-tasker-local-tasks ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0.3rem 0.1rem;
+  padding: 0.4rem 0.6rem;
+  background-color: #cccccc;
+  border: 1px solid;
+  border-radius: 5px; }
+
+#block-tasker-local-tasks ul li a:hover {
+  background-color: #0a65aa; }
 
 main[role=main] {
   display: flex;

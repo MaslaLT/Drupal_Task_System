@@ -1,11 +1,11 @@
 uuid: b1176326-e8f9-4674-b705-187943b2d373
-name: 'Task System for Juniors'
+name: 'D Tasks'
 mail: tsfj@gmail.com
-slogan: ''
+slogan: 'Best Tasks For Best Prctice '
 page:
   403: ''
   404: ''
-  front: /node/5
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

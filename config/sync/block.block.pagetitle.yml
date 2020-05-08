@@ -1,0 +1,18 @@
+uuid: 4c146264-4a9a-4cfd-9495-953c7ee15880
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tasker
+id: pagetitle
+theme: tasker
+region: content_header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

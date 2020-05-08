@@ -10,6 +10,7 @@
 }
 
 .layout-sidebar-first div h2{
+  text-align: right;
   color: dimgrey;
   width: 90%;
   margin: 1rem 0.5rem 0.5rem;
@@ -20,6 +21,10 @@
   font-weight: bold;
   border-bottom: 1px grey solid;
 
+}
+
+.layout-sidebar-first div ul {
+  padding-left: 0;
 }
 
 .layout-sidebar-first div ul li {
@@ -35,6 +40,7 @@
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem 0.5rem 0.1rem;
 }
 
 .layout-sidebar-first div ul li:hover {
