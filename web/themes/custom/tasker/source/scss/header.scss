@@ -1,0 +1,17 @@
+.header {
+  background-color: #0a6eb4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem;
+}
+
+.header div {
+  max-width: 40vw;
+}
+
+#burger-icon {
+  height: 1.8rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}

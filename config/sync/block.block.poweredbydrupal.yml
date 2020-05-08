@@ -1,4 +1,4 @@
-uuid: 189d59ea-0cd8-427d-9366-c62baf49db6e
+uuid: a9e8a407-fdf4-430f-8abf-7556444fc17a
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - tasker
-_core:
-  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
-id: tasker_powered
+id: poweredbydrupal
 theme: tasker
-region: content
-weight: -2
+region: footer_long
+weight: 0
 provider: null
 plugin: system_powered_by_block
 settings:

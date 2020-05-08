@@ -13,8 +13,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: tasker_main_menu
 theme: tasker
-region: primary_menu
-weight: 0
+region: secondary_menu
+weight: -8
 provider: null
 plugin: 'system_menu_block:main'
 settings:

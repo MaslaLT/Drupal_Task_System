@@ -1,0 +1,30 @@
+.header div [role=navigation]{
+  display: inline-block;
+}
+
+.header div [role=navigation] ul {
+  list-style: none;
+}
+
+.header div [role=navigation] ul li{
+  display: inline-block;
+  padding: 0.3rem;
+  margin: 0.1rem;
+}
+
+.header div [role=navigation] ul li a{
+  padding: 0.4rem 0.8rem;
+  margin: 0.1rem;
+  border-radius: 8px;
+  border: 1px white solid;
+  background-color: #0a6eb4;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.header div [role=navigation] ul li a:hover{
+  border: 1px black solid;
+  color: black;
+}

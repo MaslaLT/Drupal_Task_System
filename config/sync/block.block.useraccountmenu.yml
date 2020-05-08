@@ -1,4 +1,4 @@
-uuid: 8481521f-e1fa-4739-84c8-e8f9b82a65d1
+uuid: 0d544ed6-7cca-417f-b0b7-add0ce694371
 langcode: en
 status: true
 dependencies:
@@ -8,20 +8,18 @@ dependencies:
     - system
   theme:
     - tasker
-_core:
-  default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
-id: tasker_account_menu
+id: useraccountmenu
 theme: tasker
-region: secondary_menu
-weight: -7
+region: sidebar_first
+weight: 0
 provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
   label: 'User account menu'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: false
 visibility: {  }

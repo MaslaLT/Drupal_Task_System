@@ -1,0 +1,36 @@
+#breadcrumb {
+  min-height: 1.6rem;
+  align-items: center;
+  display: flex;
+}
+
+#breadcrumb div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#breadcrumb [role="navigation"] ol {
+  margin-left: 2rem;
+}
+
+#breadcrumb [role="navigation"] ol li {
+  display: inline-block;
+  padding: 0.2rem;
+  margin-left: 0.1rem;
+}
+
+#breadcrumb [role="navigation"] ol li a {
+  color: #cccccc;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#breadcrumb [role="navigation"] ol li a:hover {
+  color: #0a65aa;
+}
+
+#breadcrumb [role="navigation"] ol li a::after {
+  content: " / ";
+}

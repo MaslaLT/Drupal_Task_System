@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Function to support Tasker Theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Adding id for Tasker theme breadcrumb region.
+ *
+ * @inheritDoc
+ */
+function tasker_preprocess_region(&$variables) {
+  if ($variables['elements']['#region'] == 'breadcrumb') {
+    $variables['attributes']['id'] = 'breadcrumb';
+  }
+}

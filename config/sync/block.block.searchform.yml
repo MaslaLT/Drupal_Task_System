@@ -1,0 +1,21 @@
+uuid: d71ed5ee-c54f-4937-bea2-1fa4369c667f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tasker
+id: searchform
+theme: tasker
+region: primary_menu
+weight: -9
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }
