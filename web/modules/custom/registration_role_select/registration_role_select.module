@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Main logic module file.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Function returns all available user roles names.
+ *
+ * @return array
+ *   Array of all roles names.
+ */
+function role_names() {
+  $role_names = [];
+  $roles = user_roles();
+  foreach ($roles as $role) {
+    $role_names[] = $role->label();
+  }
+  return $role_names;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function registration_role_select_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['account']['role_select'] = [
+    '#type' => 'select',
+    '#title' => 'Role',
+    '#description' => t('Select role you want to register.'),
+    '#options' => [
+      '1' => t('administrator'),
+    ],
+  ];
+  dump(role_names());
+}

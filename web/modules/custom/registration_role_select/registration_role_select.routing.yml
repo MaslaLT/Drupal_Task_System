@@ -1,0 +1,7 @@
+registration_role_select.admin_settings:
+  path: '/admin/config/content/role-select'
+  defaults:
+    _form: '\Drupal\registration_role_select\Form\RegRoleSelectForm'
+    _title: 'Role selection for registration form'
+  requirements:
+    _permission: 'administer registration_role_select'

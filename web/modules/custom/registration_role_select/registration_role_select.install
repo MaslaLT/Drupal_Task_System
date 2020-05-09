@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * The installation and un installation instructions.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function registration_role_select_install() {
+  $config = \Drupal::service('config.factory');
+  $config->getEditable('registration_role_select.settings');
+  $config->set('role', 'anonimous');
+  $config->save();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function registration_role_select_uninstall() {
+  $config = \Drupal::service('config.factory');
+  $config->getEditable('registration_role_select.settings');
+  $config->delete();
+}
