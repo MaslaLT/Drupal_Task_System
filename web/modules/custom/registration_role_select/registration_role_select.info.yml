@@ -1,0 +1,5 @@
+name: 'Role selection for registration'
+description: 'Enables role selection in registration form'
+type: module
+package: custom
+core: 8.x

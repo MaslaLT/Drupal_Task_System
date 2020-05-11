@@ -1,0 +1,4 @@
+administer registration_role_select:
+  title: 'Administer Registration Role Select'
+  description: 'Access Registration Role Select administration page'
+  restrict access: true

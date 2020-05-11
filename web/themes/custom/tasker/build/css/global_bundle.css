@@ -49,7 +49,7 @@ h2 {
   border-radius: 5px;
   padding: 0.2rem; }
 
-input[value="Search"] {
+.header div[role=search] input[type=submit] {
   display: none;
   border: 0; }
 
