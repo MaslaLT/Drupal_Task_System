@@ -12,6 +12,8 @@ import '../scss/main.scss';
 import '../scss/footer.scss';
 import '../scss/under-header.scss';
 import '../scss/language-field.scss';
+import '../scss/table.scss';
+import '../scss/drop-button.scss';
 
 // ** JS **
 import '../js/js_files/side-menu';
