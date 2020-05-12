@@ -1,0 +1,48 @@
+table {
+  border-collapse: collapse;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table a:visited, table a {
+  color: grey;
+  text-decoration: underline grey;
+}
+
+thead {
+  background-color: #2aa198;
+  font-family: "Roboto";
+}
+
+th {
+  padding: 0.8rem 1rem;
+  color: white;
+}
+
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f4fafa;
+}
+
+tbody {
+  font-size: 0.9rem;
+  text-decoration: #5a8bed;
+  font-family: "Roboto Medium";
+  color: grey;
+  text-align: center;
+}
+
+td {
+  padding: 0.6rem 0.4rem;
+}
+
+.views-field-dropbutton{
+  display: flex !important;
+  justify-content: center;
+}
